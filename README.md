@@ -109,6 +109,13 @@ otherwise, inject `IAltVEventEmitter`
 }
 ```
 
+## Debugging in browser
+If you open Blazor APP in a browser, all emit events will be logged to the console.
+In addition to that, you can trigger callbacks using
+```javascript
+window.dispatchEvent(new CustomEvent('eventName', {detail: argArray}));
+```
+
 
 
 
